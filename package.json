@@ -1,0 +1,19 @@
+{
+  "name": "hacktoberfest-js-functions",
+  "version": "0.0.0",
+  "description": "A repo with collection of functions written by hacktober fest attendees",
+  "main": "dist/cjs/index.js",
+  "types": "dist/esm/index.d.ts",
+  "repository": "https://github.com/fidisys/hacktoberfest-js-functions.git",
+  "author": "fidisys",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "build": "npm run build:cjs & npm run build:esm",
+    "build:cjs": "tsc -p tsconfig-cjs.json",
+    "build:esm": "tsc -p tsconfig-esm.json"
+  }
+}
