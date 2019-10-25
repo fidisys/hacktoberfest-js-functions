@@ -8,3 +8,6 @@ export const getRandomString = () =>
 
 export const getRandomNumbers = (max: number, min: number) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
+
+export const removeNonAscii = (str: string) =>  
+  str.toString().replace(/[^\x20-\x7E]/g, '');
